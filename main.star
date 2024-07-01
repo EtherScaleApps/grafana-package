@@ -41,10 +41,6 @@ def run(
                     "DashboardsDirpath": DASHBOARDS_DIR_PATH,
                 },
             ),
-            "alerting/alerting.yml": struct(
-                template=read_file(grafana_alerting_template),
-                data=grafana_alerting_data,
-            ),
         }
     )
 
